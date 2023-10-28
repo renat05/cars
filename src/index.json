@@ -1,0 +1,26 @@
+{
+    "cars": 
+      [
+        { 
+        "id": 1, 
+        "title": "Geely", 
+        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+        "price": "13.500",
+        "info": "" 
+    } ,
+    { 
+        "id": 2, 
+        "title": "Kia K5", 
+        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
+        "price": "11.500",
+        "info": ""
+    },
+    { 
+        "id": 3, 
+        "title": "Hyundai", 
+        "img": "https://450517.selcdn.ru/antcar/images/8I3bzUaRvH/medium/8I3bzUaRvH.jpg",
+        "price": "30.900",
+        "info": ""
+    }
+      ]
+  }

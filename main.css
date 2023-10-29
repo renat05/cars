@@ -1,0 +1,77 @@
+
+.category {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	max-width: 1170px;
+	  display: flex; 
+	 flex-wrap: wrap; 
+	  justify-content: center;
+  margin: 0 auto;
+	gap: 20px;
+	 row-gap: 20px; 
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+	width: 100%;
+}
+
+.item {
+	position: relative;
+	/*   min-width: 370px; */
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	background: #FFFFFF;
+	border: 1px solid #CDCDCD;
+	border-radius: 3px;
+	text-decoration: none;
+	transition: 0.5s;
+	z-index: 0;
+}
+
+.item:hover {
+	border: 1px solid #fff0;
+	box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+	border-radius: 3px;
+}
+.title{
+  text-align:center
+}
+.img{
+  margin-top: 50px;
+  display: flex;
+  margin: 0 auto;
+}
+.item .title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 28px;
+	/* Основной текст */
+	color: #2F3035;
+	padding-left: 20px;
+	padding-top: 20px
+}
+
+.item:hover>.title {
+	color: #1C62CD;
+}
+
+.item .link {
+	font-size: 14px;
+	padding-left: 20px;
+	padding-bottom: 14px;
+	/* светло серый текст */
+	color: #C4C4C4;
+}
+.link{
+  background:#00afed;
+  width:120px;
+  margin:40px;
+  margin: 0 auto;
+  color: #fff !important;
+  border-radius:6px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:13px;
+}

@@ -1,0 +1,18 @@
+{
+    "cars": 
+      [
+        { 
+        "id": 1, 
+        "title": "Geely", 
+        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+        "price": "13.500",
+        "info": "2.0 л / 120 л.с. / Бензин" 
+    } ,  { 
+      "id": 1, 
+      "title": "Geely", 
+      "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+      "price": "13.500",
+      "info": "2.0 л / 120 л.с. / Бензин" 
+  } 
+]
+}

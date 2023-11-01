@@ -8,10 +8,10 @@ import Product from './components/Product';
 import Favourites from './components/Favorites';
 
 function App(props) {
-  let {allCars} = props
+  let items = 'props text'
   return (
     <BrowserRouter>
-     <Nav allCars={allCars}/>
+     <Nav items={items}/>
       <Footer/>
        <Routes>
         <Route path='favorites' element={<Favourites/>} />
@@ -20,6 +20,7 @@ function App(props) {
       </Routes>
     </BrowserRouter>
   );
+  
 }
 
 ReactDOM.render(<App />, document.getElementById("root"));

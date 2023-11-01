@@ -12,7 +12,30 @@
 	grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
 	width: 100%;
 }
-
+.pagination{
+	display: flex;
+}
+.pag{
+	width: 40px;
+	height: 30px;
+	background-color: #00afed;
+	color: white;
+	border-radius: 8px;
+	text-align: center;
+}
+.pagination button {
+	width: 350px;
+	height: 50px;
+	background-color: blue;
+	color: #fff;
+	border-radius: 8px;
+	font-size: 20px;
+	margin: 10px;
+}	
+.but{
+	color: #000;
+	display: flex;
+}
 .item { 
     margin-top: 20px;
 	position: relative;

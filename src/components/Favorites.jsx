@@ -1,23 +1,30 @@
 import React from "react";
 import '../Main.css';
-
-import Fav from '../fav.json';
-
 const Favourites = () => {
-    let items = Fav.cars
-    const [favorites, setFavorites] = React.useState(items); // Устанавливаем начальное значение из Fav
-
+     
+    const [favorites, setFavorites] = React.useState([]);
+    React.useEffect(() => {
+    fetch('https://61f50a3162f1e300173c3fbf.mockapi.io/cars')
+    .then(res => res.json())
+    .then(data => setFavorites(data))
+    .catch((error) => console.log('error', error))
+},[])
     return (
         <div className="category">
-            {favorites.map((car, index) => (
+            {favorites.map((item, index) => (
                 <div key={index} className="item">
-                    <img className="img" width='100%' src={car.img} alt={car.title} />
-                    <span className="title">{car.title}</span>
-                    <p className='info'>{car.info}</p>
-                    <p>{car.price}</p>
+                    <img className="img" width='100%' src={item.img}
+                    alt={item.title} />
+                    <span className="title">geely</span>
+                    <p className='info'>{item.cars}</p>
+                    <p>{item.price}</p>
+                    {
+                        console.log(item.cars)
+                    }
                     <span className="link">Подробнее</span>
                 </div>
-            ))}
+            ))
+        }
         </div>
     );
 }

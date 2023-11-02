@@ -35,11 +35,11 @@ const Main = ({items}) => {
     // Отправить POST-запрос на сервер при изменении избранных
     useEffect(() => {
         if (favorites.length > 0) {
-            fetch('https://codesandbox.io/s/smoosh-cloud-3wl2xl?file=/src/server.json', { // Замените на реальный URL сервера
+            fetch('https://61f50a3162f1e300173c3fbf.mockapi.io/cars', { // Замените на реальный URL сервера
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
-                },
+                },  
                 body: JSON.stringify(favorites)
             })
             .then(response => response.json())

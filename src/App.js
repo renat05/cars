@@ -8,9 +8,9 @@ import Product from './components/Product';
 import Favourites from './components/Favorites';
 
 function App(props) {
-  let items = 'props text'
+  let items = 'prop22s text'
   return (
-    <BrowserRouter>
+    <BrowserRouter>  
      <Nav items={items}/>
       <Footer/>
        <Routes>

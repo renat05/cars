@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from "react";
 import './Main.css';
 import Cars from './index.json';
+import { toast } from "react-toastify";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import Product from './components/Product'
 
-const Main = ({items}) => {
+
+const Main = (props) => {
     const allCars = Cars.cars;  
-    const itemsPerPage = 3;
-    console.log(items)
+    const itemsPerPage = 6;
+    
 
     // Состояние для отслеживания текущей страницы
     const [currentPage, setCurrentPage] = useState(1);
@@ -28,49 +32,61 @@ const Main = ({items}) => {
     };
 
     // Функция для добавления автомобиля в избранное
-    const handleAddToFavorite = (title, image) => {
-        setFavorites([...favorites, { title, image }]);
+    const handleAddToFavorite = ( title, image, info, price) => {
+     fetch('/addFavorite', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(favorites),
+})
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+    })
+    .catch(error => {
+        console.error('Ошибка при добавлении в избранное:', error);
+    });
+
     }
 
     // Отправить POST-запрос на сервер при изменении избранных
-    useEffect(() => {
-        if (favorites.length > 0) {
-            fetch('https://61f50a3162f1e300173c3fbf.mockapi.io/cars', { // Замените на реальный URL сервера
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },  
-                body: JSON.stringify(favorites)
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log(data.message);
-            })
-            .catch(error => {
-                console.error('Ошибка при добавлении в избранное:', error);
-            });
-        }
-    }, [favorites]);
+
+     
 
     return (
+     
         <div className="category">
             {currentItems.map((car, index) => (
                 <div key={index} className="item">
                     <img className="img" width='100%' src={car.img} alt={car.title} />
                     <span className="title">{car.title}</span>
                     <p className='info'>{car.info}</p>
-                    <p>{car.price}</p>❤️
-                    <span className="link">Подробнее</span>
-                    <span onClick={() => handleAddToFavorite(car.title, car.img)} className="link">❤️ выбрать</span>
+                    <p>{car.price}</p>
+                    
+                  <Link to={`/product/${car.id}`} >
+                     <span className="link">Подробнее</span>
+                     </Link> 
+                  
+                    <span onClick={() => handleAddToFavorite(car.title, car.img, car.info, car.price)}className="link">❤ избранное</span>
                 </div>
             ))}
 
             <div className="pagination">
                 {currentPage > 1 && <button onClick={prevPage}>Предыдущая</button>}
                 {currentItems.length === itemsPerPage && <button onClick={nextPage}>Следующая</button>}
-                {console.log('render', currentPage)}
+    
             </div>
+<Router>
+        <Switch>
+          <Route
+            path="/product/:id"
+            element={<Product item={state.find(item => item.id.toString() === useParams().id)} />}
+          />
+        </Switch>
+      </Router>
         </div>
+
     );
 }
 

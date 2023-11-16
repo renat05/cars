@@ -23,7 +23,49 @@
         "info": "1.5 л / 181 л.с. / Бензин"
     },
     { 
-        "id": 1, 
+        "id": 4, 
+        "title": "Geely", 
+        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+        "price": "13.500",
+        "info": "" 
+    } ,
+    { 
+        "id": 5, 
+        "title": "Kia K5", 
+        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
+        "price": "11.500",
+        "info": ""
+    },
+    { 
+        "id": 6, 
+        "title": "Geely", 
+        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+        "price": "13.500",
+        "info": "" 
+    } ,
+    { 
+        "id": 7, 
+        "title": "Kia K5", 
+        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
+        "price": "11.500",
+        "info": ""
+    },
+    { 
+        "id": 8, 
+        "title": "Geely", 
+        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
+        "price": "13.500",
+        "info": "" 
+    } ,
+    { 
+        "id": 9, 
+        "title": "Kia K5", 
+        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
+        "price": "11.500",
+        "info": ""
+    },
+    { 
+        "id": 10, 
         "title": "Geely", 
         "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
         "price": "13.500",
@@ -37,56 +79,14 @@
         "info": ""
     },
     { 
-        "id": 1, 
+        "id": 11, 
         "title": "Geely", 
         "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
         "price": "13.500",
         "info": "" 
     } ,
     { 
-        "id": 2, 
-        "title": "Kia K5", 
-        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
-        "price": "11.500",
-        "info": ""
-    },
-    { 
-        "id": 1, 
-        "title": "Geely", 
-        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
-        "price": "13.500",
-        "info": "" 
-    } ,
-    { 
-        "id": 2, 
-        "title": "Kia K5", 
-        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
-        "price": "11.500",
-        "info": ""
-    },
-    { 
-        "id": 1, 
-        "title": "Geely", 
-        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
-        "price": "13.500",
-        "info": "" 
-    } ,
-    { 
-        "id": 2, 
-        "title": "Kia K5", 
-        "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
-        "price": "11.500",
-        "info": ""
-    },
-    { 
-        "id": 1, 
-        "title": "Geely", 
-        "img": "https://450517.selcdn.ru/antcar/images/L78fdilsFK/medium/L78fdilsFK.jpg",
-        "price": "13.500",
-        "info": "" 
-    } ,
-    { 
-        "id": 2, 
+        "id": 12, 
         "title": "Kia K5", 
         "img": "https://450517.selcdn.ru/antcar/images/GlmsRjQJuA/medium/GlmsRjQJuA.jpg",
         "price": "11.500",

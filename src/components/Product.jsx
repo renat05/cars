@@ -1,20 +1,26 @@
+// Импорты
 import React from "react";
-import './product.css'
-const Product = () => {
-    return (
-        <div>
- <div class="card">
-  <div class="card-img"></div>
-  <div class="card-info">
-    <p class="text-title">Product title </p>
-    <p class="text-body">Product description and details</p>
-  </div>
-  <div class="card-footer">
-  <span class="text-title">$499.49</span>
-</div></div>
+import { Link } from "react-router-dom";
+
+const Products = ({ allCars }) => {
+  return (
+    <div className="category">
+      {allCars.map((car, index) => (
+        <div key={index} className="item">
+          <img className="img" width="100%" src={car.img} alt={car.title} />
+          <span className="title">{car.title}</span>
+          <p className="info">{car.info}</p>
+          <p>{car.price}</p>
+
+          <Link to={`/product/${car.id}`}>
+            <span className="link">Подробнее</span>
+          </Link>
+
+          {/* Убрал обработчик на избранное, так как он, кажется, не используется здесь */}
         </div>
-    )
-}
+      ))}
+    </div>
+  );
+};
 
-
-export default Product;
+export default Products;

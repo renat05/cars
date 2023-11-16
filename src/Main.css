@@ -15,6 +15,9 @@
 .pagination{
 	display: flex;
 }
+.Toastify{
+	color: red;
+}
 .pag{
 	width: 40px;
 	height: 30px;
@@ -99,6 +102,7 @@
   margin-bottom:30px;
   text-align:center;
   padding:13px;
+  cursor: pointer;
 }
 .price{
 	color: #000;
